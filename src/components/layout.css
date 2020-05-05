@@ -615,6 +615,29 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+.fl{
+  font-size:1.2rem
+}
+.fxl{
+  font-size: 1.5rem;
+}
+.fm{
+  font-size:0.8rem
+}
+.fsm{
+  font-size:0.6rem
+}
+.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+.dark-mode {
+  background-color: #1a1919;
+  color: rgb(228, 227, 227);
+  transition: background-color 0.3s ease;
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
