@@ -28,7 +28,7 @@ export default ({data}) =>{
                     Next Page <FontAwesomeIcon icon={faArrowRight} />
                 </Link>:
                 <span className='text-decoration-none forback p-1 text-muted' >
-                    <FontAwesomeIcon icon={faArrowLeft} /> Next Page
+                    Next Page <FontAwesomeIcon icon={faArrowRight} />
                 </span>}
             </div>
         </Layout>

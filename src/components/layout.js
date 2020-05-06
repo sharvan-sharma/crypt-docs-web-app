@@ -21,10 +21,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { useStaticQuery, graphql,Link } from "gatsby"
-import 'jquery/src/jquery'
-import 'popper.js/dist/popper'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap/dist/js/bootstrap.js'
+
 
 import "./layout.css"
 
@@ -93,6 +90,7 @@ const Layout = (props) => {
     setMobileOpen(!mobileOpen);
   };
 
+  
 
   return (
     <div className='d-flex'> 
