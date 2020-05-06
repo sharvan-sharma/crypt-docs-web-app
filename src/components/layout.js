@@ -156,7 +156,7 @@ const Layout = (props) => {
         <div className={classes.toolbar} />
         <Fade in={true}><div>{props.children}</div></Fade>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()} | <span><b>C</b></span><span>ry</span><sapn><b>P</b></sapn><span>t</span>, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
