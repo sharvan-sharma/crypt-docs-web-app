@@ -45,6 +45,12 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: drawerWidth,
     },
   },
+  codeArea:{
+    [theme.breakpoints.up('sm')]: {
+      width: `calc(100% - ${drawerWidth}px)`,
+    },
+    width:'100%'
+  },
   menuButton: {
     marginRight: theme.spacing(2),
     [theme.breakpoints.up('sm')]: {
@@ -145,7 +151,8 @@ const Layout = (props) => {
           </Drawer>
         </Hidden>
       </nav>
-      <div className='p-4 col-12'>
+      <div className={classes.codeArea}>
+        <div className='p-4'>
         <div className={classes.toolbar} />
         <Fade in={true}><div>{props.children}</div></Fade>
         <footer>
@@ -153,6 +160,7 @@ const Layout = (props) => {
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
+        </div>
       </div>
     </div>
   );
