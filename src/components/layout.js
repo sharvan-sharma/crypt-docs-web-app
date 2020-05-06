@@ -16,10 +16,11 @@ import DocsDrawer from './Drawer'
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import MenuIcon from '@material-ui/icons/Menu';
+import Fade from '@material-ui/core/Fade'
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql,Link } from "gatsby"
 import 'jquery/src/jquery'
 import 'popper.js/dist/popper'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -54,7 +55,6 @@ const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor:'inherit',
     color:'inherit'
   },
   content: {
@@ -103,7 +103,7 @@ const Layout = (props) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            {data.site.siteMetadata.title}
+            <Link to='/' className='text-decoration-none text-white'>{data.site.siteMetadata.title}</Link>
           </Typography>
           <div className='ml-auto d-flex'>
               <IconButton onClick={darkMode.disable}>
@@ -145,15 +145,15 @@ const Layout = (props) => {
           </Drawer>
         </Hidden>
       </nav>
-      <main className={classes.content}>
+      <div className='p-4 col-12'>
         <div className={classes.toolbar} />
-        {props.children}
+        <Fade in={true}><div>{props.children}</div></Fade>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-      </main>
+      </div>
     </div>
   );
 }

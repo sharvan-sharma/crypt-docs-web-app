@@ -23,6 +23,28 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-relative-images`,
+        `gatsby-remark-prismjs`,
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            loading:'lazy',
+            linkImagesToOriginal: false,
+          },
+        },
+        {
+          resolve: `gatsby-remark-prismjs`,
+          options:{
+            showLineNumbers: true,
+          }
+        },
+      ],
+    },
+  },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,

@@ -638,6 +638,22 @@ pre tt:after {
   color: rgb(228, 227, 227);
   transition: background-color 0.3s ease;
 }
+.listitem:hover{
+  background-color:whitesmoke;
+}
+.forback:hover{
+  border-bottom: 5px solid black;
+  transition: 0.3s all;
+}
+.forback{
+  border-bottom: 5px solid white;
+  transition: 0.3s all;
+}
+img{
+  width: 100%;
+  height:auto
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
