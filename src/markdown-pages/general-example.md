@@ -5,7 +5,7 @@ prevpage: '/getting-profile'
 nextpage: '/node-passport-example'
 ---
 
-### Eample Request In Node.js with Axios
+### Example Request In Node.js with Axios
 
 **Login Route on Client Server**
 
