@@ -4,6 +4,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
+
 import React from 'react';
 import Brightness2Icon from '@material-ui/icons/Brightness2';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
@@ -67,6 +68,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Layout = (props) => {
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -93,6 +95,7 @@ const Layout = (props) => {
   
 
   return (
+      
     <div className='d-flex'> 
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
@@ -152,7 +155,11 @@ const Layout = (props) => {
       <div className={classes.codeArea}>
         <div className='p-4'>
         <div className={classes.toolbar} />
-        <Fade in={true}><div>{props.children}</div></Fade>
+        <Fade in={true}>
+          <div>
+            {props.children}
+          </div>
+        </Fade>
         <footer>
           © {new Date().getFullYear()} | <span><b>C</b></span><span>ry</span><sapn><b>P</b></sapn><span>t</span>, Built with
           {` `}
@@ -161,6 +168,7 @@ const Layout = (props) => {
         </div>
       </div>
     </div>
+    
   );
 }
 

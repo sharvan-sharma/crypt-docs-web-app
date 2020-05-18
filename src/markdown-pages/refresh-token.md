@@ -37,3 +37,5 @@ https://crypt-oauth.herokuapp.com/oauth/refreshtoken
 }
 ```
 
+[click here to contribute to this page](https://github.com/sharvan-sharma/CryPt-docs/tree/master/src/markdown-pages/refresh-token.md)
+

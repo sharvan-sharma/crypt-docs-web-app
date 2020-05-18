@@ -40,3 +40,5 @@ After performing all the Steps , Client Id and Client Secret is generated
 
 Client credentials can be  Accessed from Credentials Table in Dev Console.
 These credentials are required while performing Oauth with our service.
+
+[click here to contribute to this page](https://github.com/sharvan-sharma/CryPt-docs/tree/master/src/markdown-pages/get-started.md)

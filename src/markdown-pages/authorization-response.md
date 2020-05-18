@@ -58,3 +58,5 @@ https://example-app.com/redirect
 &error_uri=error_url_from_crypt
 &state=wxyz1234
 ```
+
+[click here to contribute to this page](https://github.com/sharvan-sharma/CryPt-docs/tree/master/src/markdown-pages/authorization-response.md)

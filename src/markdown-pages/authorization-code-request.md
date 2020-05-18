@@ -46,3 +46,5 @@ Request Body
     "code":"XXXXXXXXXXXXXXXXXXXXXXXXX"
 }
 ```
+
+[click here to contribute to this page](https://github.com/sharvan-sharma/CryPt-docs/tree/master/src/markdown-pages/authorization-code-request.md)

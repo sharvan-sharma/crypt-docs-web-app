@@ -99,3 +99,5 @@ app.get('/crypt/oauth/callback',(req,res)=>{
     }
 })
 ```
+
+[click here to contribute to this page](https://github.com/sharvan-sharma/CryPt-docs/tree/master/src/markdown-pages/general-example.md)

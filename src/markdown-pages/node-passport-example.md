@@ -92,3 +92,5 @@ app.get('/logout',(req,res)=>{
 })
 ```
 
+[click here to contribute to this page](https://github.com/sharvan-sharma/CryPt-docs/tree/master/src/markdown-pages/node-passport-example.md)
+
