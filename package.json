@@ -23,7 +23,7 @@
     "gatsby-remark-prismjs": "^3.5.1",
     "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-source-filesystem": "^2.3.0",
-    "gatsby-transformer-remark": "^2.8.6",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.14.3",
